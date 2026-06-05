@@ -1000,8 +1000,17 @@
       }
 
       // Auto-advance logic
+      let isProgramsVisible = true;
+      const programsContainer = document.getElementById('programs-container');
+      if (programsContainer) {
+         const observer = new IntersectionObserver((entries) => {
+            isProgramsVisible = entries[0].isIntersecting;
+         }, { threshold: 0.1 });
+         observer.observe(programsContainer);
+      }
+
       setInterval(() => {
-        if (!isPaused && window.innerWidth >= 1024) { // Only run progress on desktop
+        if (!isPaused && isProgramsVisible && window.innerWidth >= 1024) { // Only run progress on desktop
           progressVal += 1; // 1% every 50ms = 5s total
           
           const activeItem = document.querySelectorAll('.program-list-item')[activeProgram];
