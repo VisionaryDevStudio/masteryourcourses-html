@@ -123,7 +123,7 @@
   <!-- Premium Fonts: Poppins for Headings, Inter for Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Tailwind Configuration -->
   <script>
@@ -133,7 +133,7 @@
         extend: {
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
-            heading: ['Outfit', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
           },
           colors: {
             background: 'hsl(var(--background) / <alpha-value>)',
@@ -222,7 +222,7 @@
     <div class="hidden md:flex max-w-7xl mx-auto px-6 h-20 items-center justify-between">
       <div class="flex items-center gap-2">
         <img src="logo/logo.svg" alt="Master Your Courses Logo" class="w-8 h-8 object-contain dark:brightness-0 dark:invert" onerror="this.style.display='none'" />
-        <span class="text-2xl font-black font-heading tracking-tight text-foreground">
+        <span class="text-2xl font-black font-display tracking-tight text-foreground">
           Master<span class="text-indigo-500">Your</span>Courses
         </span>
       </div>
@@ -267,7 +267,7 @@
     <div class="flex md:hidden px-4 h-16 items-center justify-between w-full gap-2">
       <div class="flex items-center gap-1 min-w-0 shrink">
         <img src="logo/logo.svg" alt="Master Your Courses Logo" class="w-6 h-6 object-contain dark:brightness-0 dark:invert shrink-0" onerror="this.style.display='none'" />
-        <span class="text-sm sm:text-base font-black font-heading tracking-tight text-foreground truncate">
+        <span class="text-sm sm:text-base font-black font-display tracking-tight text-foreground truncate">
           Master<span class="text-indigo-500">Your</span>Courses
         </span>
       </div>
@@ -315,7 +315,7 @@
             <span class="text-muted-foreground">Trusted by 1,200+ Students</span>
           </div>
           
-          <h1 class="text-5xl md:text-7xl font-black leading-[1.05] mb-6 font-heading tracking-tighter">
+          <h1 class="text-5xl md:text-7xl font-black leading-[1.05] mb-6 font-display tracking-tighter">
             Master your <br/> toughest&nbsp;courses. <br/>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500">
               Secure your <br class="hidden md:block" /> future.
@@ -327,12 +327,12 @@
           </p>
           
           <div class="flex flex-col sm:flex-row items-center gap-4">
-            <button class="px-8 py-4 w-full sm:w-auto rounded-full bg-foreground text-background text-sm font-black font-heading hover:scale-105 active:scale-95 transition-all shadow-xl flex items-center justify-center gap-2">
+            <button class="px-8 py-4 w-full sm:w-auto rounded-full bg-foreground text-background text-sm font-black font-display hover:scale-105 active:scale-95 transition-all shadow-xl flex items-center justify-center gap-2">
               Explore Programs 
               <!-- ArrowRight Icon -->
               <svg class="lucide w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </button>
-            <button class="px-8 py-4 w-full sm:w-auto rounded-full bg-background/50 backdrop-blur-sm text-foreground border border-border text-sm font-black font-heading hover:bg-muted transition-all flex items-center justify-center gap-2">
+            <button class="px-8 py-4 w-full sm:w-auto rounded-full bg-background/50 backdrop-blur-sm text-foreground border border-border text-sm font-black font-display hover:bg-muted transition-all flex items-center justify-center gap-2">
               <!-- Play Icon -->
               <svg class="lucide w-4 h-4" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg> Watch the Trailer
             </button>
@@ -370,7 +370,7 @@
                 </div>
                 <div>
                   <p class="font-black text-base text-foreground">Farhana Hanip</p>
-                  <p class="text-xs font-bold uppercase tracking-widest text-emerald-600 mt-1 font-heading">CFO, Washington University</p>
+                  <p class="text-xs font-bold uppercase tracking-widest text-emerald-600 mt-1 font-display">CFO, Washington University</p>
                 </div>
               </div>
               <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 text-emerald-600">
@@ -381,12 +381,12 @@
 
           <!-- Floating micro-elements for depth -->
           <div class="absolute top-10 right-10 w-20 h-20 bg-background/80 backdrop-blur-lg border border-border rounded-2xl shadow-xl flex flex-col items-center justify-center z-30 animate-float-fast rotate-6">
-             <span class="text-2xl font-black font-heading text-indigo-500">5.0</span>
+             <span class="text-2xl font-black font-display text-indigo-500">5.0</span>
              <span class="text-[8px] font-bold uppercase text-muted-foreground">AP Score</span>
           </div>
 
           <div class="absolute bottom-32 md:bottom-24 -left-4 md:-left-12 w-24 h-24 bg-background/80 backdrop-blur-lg border border-border rounded-full shadow-xl flex flex-col items-center justify-center z-30 animate-float-slow -rotate-6">
-             <span class="text-2xl font-black font-heading text-emerald-500">1550</span>
+             <span class="text-2xl font-black font-display text-emerald-500">1550</span>
              <span class="text-[8px] font-bold uppercase text-muted-foreground">SAT Score</span>
           </div>
           
@@ -402,7 +402,7 @@
              <span class="text-foreground">Trusted by 1,200+ Students</span>
            </div>
            
-           <h1 class="text-4xl sm:text-5xl font-black leading-[1.1] mb-5 font-heading tracking-tighter">
+           <h1 class="text-4xl sm:text-5xl font-black leading-[1.1] mb-5 font-display tracking-tighter">
              Master your <br/> toughest&nbsp;courses. <br class="block" />
              <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 inline-block mt-2">
                Secure your <br/> future.
@@ -414,11 +414,11 @@
            </p>
            
            <div class="flex flex-col w-full sm:w-auto gap-3">
-             <button class="py-3.5 px-6 w-full rounded-full bg-foreground text-background text-sm font-black font-heading hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl flex items-center justify-center gap-2">
+             <button class="py-3.5 px-6 w-full rounded-full bg-foreground text-background text-sm font-black font-display hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl flex items-center justify-center gap-2">
                Explore Programs 
                <svg class="lucide w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
              </button>
-             <button class="py-3.5 px-6 w-full rounded-full bg-background/50 backdrop-blur-sm text-foreground border border-border text-sm font-black font-heading hover:bg-muted transition-all flex items-center justify-center gap-2">
+             <button class="py-3.5 px-6 w-full rounded-full bg-background/50 backdrop-blur-sm text-foreground border border-border text-sm font-black font-display hover:bg-muted transition-all flex items-center justify-center gap-2">
                <svg class="lucide w-4 h-4" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg> Watch the Trailer
              </button>
            </div>
@@ -449,7 +449,7 @@
               </div>
               <div>
                 <p class="font-black text-sm text-foreground">Farhana Hanip</p>
-                <p class="text-[10px] font-bold uppercase tracking-widest text-emerald-600 mt-0.5 font-heading">CFO, Washington University</p>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-emerald-600 mt-0.5 font-display">CFO, Washington University</p>
               </div>
             </div>
             
@@ -457,12 +457,12 @@
           
           <!-- Floating micro-elements for depth on mobile -->
           <div class="absolute -top-6 right-2 w-14 h-14 bg-background/90 backdrop-blur-lg border border-border rounded-xl shadow-xl flex flex-col items-center justify-center z-30 animate-float-fast rotate-6">
-             <span class="text-lg font-black font-heading text-indigo-500">5.0</span>
+             <span class="text-lg font-black font-display text-indigo-500">5.0</span>
              <span class="text-[5px] font-bold uppercase text-muted-foreground">AP Score</span>
           </div>
 
           <div class="absolute -bottom-6 left-2 w-16 h-16 bg-background/90 backdrop-blur-lg border border-border rounded-full shadow-xl flex flex-col items-center justify-center z-30 animate-float-slow -rotate-6">
-             <span class="text-lg font-black font-heading text-emerald-500">1550</span>
+             <span class="text-lg font-black font-display text-emerald-500">1550</span>
              <span class="text-[5px] font-bold uppercase text-muted-foreground">SAT Score</span>
           </div>
           
@@ -475,31 +475,31 @@
     <section class="py-16 md:py-24 bg-slate-50 dark:bg-zinc-950 relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 relative z-10">
          <div class="text-center mb-10 md:mb-16">
-           <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-heading tracking-tighter">The numbers speak for themselves.</h2>
+           <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-display tracking-tighter">The numbers speak for themselves.</h2>
            <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">We don't just promise results. We deliver them at a scale unmatched by traditional tutoring.</p>
          </div>
          
          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             <!-- Stat 1 -->
             <div class="bg-white dark:bg-zinc-900 border-2 border-slate-200 dark:border-slate-800 p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] text-center flex flex-col items-center justify-center shadow-[0_12px_40px_rgb(0,0,0,0.08)]">
-               <div class="text-5xl md:text-7xl font-black font-heading text-foreground mb-2 md:mb-4"><span class="count-up" data-target="1200">0</span><span class="text-indigo-500">+</span></div>
-               <p class="text-xs md:text-sm font-bold uppercase tracking-widest text-muted-foreground font-heading">Students Mentored</p>
+               <div class="text-5xl md:text-7xl font-black font-display text-foreground mb-2 md:mb-4"><span class="count-up" data-target="1200">0</span><span class="text-indigo-500">+</span></div>
+               <p class="text-xs md:text-sm font-bold uppercase tracking-widest text-muted-foreground font-display">Students Mentored</p>
             </div>
             <!-- Stat 2 (Highlight) -->
             <div class="bg-slate-950 border-2 border-slate-700/80 p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] text-center flex flex-col items-center justify-center shadow-[0_20px_50px_rgb(0,0,0,0.3)] transform md:-translate-y-4 relative overflow-hidden">
                <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
-               <div class="text-5xl md:text-7xl font-black font-heading text-white mb-2 md:mb-4 relative z-10"><span class="count-up" data-target="77">0</span><span class="text-emerald-400">%</span></div>
-               <p class="text-xs md:text-sm font-bold uppercase tracking-widest text-white/70 relative z-10 font-heading">Scored a perfect 5</p>
+               <div class="text-5xl md:text-7xl font-black font-display text-white mb-2 md:mb-4 relative z-10"><span class="count-up" data-target="77">0</span><span class="text-emerald-400">%</span></div>
+               <p class="text-xs md:text-sm font-bold uppercase tracking-widest text-white/70 relative z-10 font-display">Scored a perfect 5</p>
             </div>
             <!-- Stat 3 -->
             <div class="bg-white dark:bg-zinc-900 border-2 border-slate-200 dark:border-slate-800 p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] text-center flex flex-col items-center justify-center shadow-[0_12px_40px_rgb(0,0,0,0.08)]">
-               <div class="text-5xl md:text-7xl font-black font-heading text-foreground mb-2 md:mb-4"><span class="count-up" data-target="21">0</span><span class="text-purple-500">%</span></div>
-               <p class="text-xs md:text-sm font-bold uppercase tracking-widest text-muted-foreground font-heading">Scored a 4</p>
+               <div class="text-5xl md:text-7xl font-black font-display text-foreground mb-2 md:mb-4"><span class="count-up" data-target="21">0</span><span class="text-purple-500">%</span></div>
+               <p class="text-xs md:text-sm font-bold uppercase tracking-widest text-muted-foreground font-display">Scored a 4</p>
             </div>
          </div>
          
          <div class="mt-8 md:mt-12 text-center">
-            <p class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 px-4 py-2.5 sm:px-6 sm:py-3 rounded-full border border-emerald-500/20 uppercase tracking-widest font-heading">
+            <p class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 px-4 py-2.5 sm:px-6 sm:py-3 rounded-full border border-emerald-500/20 uppercase tracking-widest font-display">
                <svg class="lucide w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> That's a 98% success rate on AP Exams.
             </p>
          </div>
@@ -508,7 +508,7 @@
 
     <!-- ----------------- University Ribbon ----------------- -->
     <section class="border-y border-black/10 dark:border-white/10 bg-muted/10 py-10 overflow-hidden relative flex flex-col items-center">
-      <p class="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-6 text-center relative z-20 font-heading">
+      <p class="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-6 text-center relative z-20 font-display">
         Our students gain admission to
       </p>
       
@@ -559,7 +559,7 @@
     <section class="bg-slate-50 dark:bg-zinc-950 border-y border-black/5 dark:border-white/5 py-16 md:py-32">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-12 md:mb-20">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-heading tracking-tighter">Why Our Students Succeed</h2>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-display tracking-tighter">Why Our Students Succeed</h2>
           <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">We replace generic tutoring with targeted, highly efficient strategies that drive real results.</p>
         </div>
 
@@ -572,7 +572,7 @@
                  <svg class="lucide w-6 h-6 md:w-7 md:h-7" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                </div>
                <div>
-                 <h3 class="text-2xl md:text-3xl font-black mb-3 md:mb-4 text-foreground font-heading tracking-tight">Personalized Study Plans</h3>
+                 <h3 class="text-2xl md:text-3xl font-black mb-3 md:mb-4 text-foreground font-display tracking-tight">Personalized Study Plans</h3>
                  <p class="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">We identify exactly where a student is struggling and focus entirely on those gaps, eliminating wasted time. Our adaptive learning engine customizes the curriculum to each student's unique learning curve.</p>
                </div>
              </div>
@@ -585,7 +585,7 @@
                <div class="w-10 h-10 bg-emerald-500/10 text-emerald-500 rounded-xl flex items-center justify-center mb-4 shadow-sm">
                  <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
                </div>
-               <h3 class="text-lg font-black mb-2 text-foreground font-heading tracking-tight">High-Impact Learning</h3>
+               <h3 class="text-lg font-black mb-2 text-foreground font-display tracking-tight">High-Impact Learning</h3>
                <p class="text-sm text-muted-foreground leading-relaxed">No fluff or busywork. Every lesson is designed to directly increase scores.</p>
              </div>
            </div>
@@ -597,7 +597,7 @@
                <div class="w-10 h-10 bg-red-500/10 text-red-500 rounded-xl flex items-center justify-center mb-4 shadow-sm">
                  <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4 4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
                </div>
-               <h3 class="text-lg font-black mb-2 text-foreground font-heading tracking-tight">True-to-Test Practice</h3>
+               <h3 class="text-lg font-black mb-2 text-foreground font-display tracking-tight">True-to-Test Practice</h3>
                <p class="text-sm text-muted-foreground leading-relaxed">Rigorous mock exams that perfectly mirror the actual test format.</p>
              </div>
            </div>
@@ -610,7 +610,7 @@
                  <svg class="lucide w-7 h-7 md:w-8 md:h-8" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
                </div>
                <div>
-                 <h3 class="text-xl md:text-2xl font-black mb-2 md:mb-3 text-foreground font-heading tracking-tight">Clear Progress Tracking Dashboard</h3>
+                 <h3 class="text-xl md:text-2xl font-black mb-2 md:mb-3 text-foreground font-display tracking-tight">Clear Progress Tracking Dashboard</h3>
                  <p class="text-sm md:text-base text-muted-foreground leading-relaxed md:max-w-3xl">See exactly how your child is improving with real-time transparent dashboards. No more guessing. Parents and students get full visibility into mastery levels across every topic.</p>
                </div>
              </div>
@@ -623,7 +623,7 @@
     <!-- ----------------- Split-Screen Interactive Programs ----------------- -->
     <section class="py-16 md:py-32 max-w-7xl mx-auto px-6">
       <div class="mb-12 md:mb-20">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-heading tracking-tighter">Elite Programs</h2>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-display tracking-tighter">Elite Programs</h2>
         <p class="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">Choose the program that best fits your child's needs and goals.</p>
       </div>
 
@@ -635,7 +635,7 @@
                 <div class="program-acc-icon w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-500 shrink-0 text-emerald-600 dark:text-emerald-400 bg-background shadow-md border border-border">
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                 </div>
-                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-foreground font-heading tracking-tight">AP STEM Bootcamps</h3>
+                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-foreground font-display tracking-tight">AP STEM Bootcamps</h3>
             </div>
           </button>
           
@@ -702,7 +702,7 @@
                 <div class="program-acc-icon w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-500 shrink-0 text-muted-foreground bg-muted">
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
                 </div>
-                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-heading tracking-tight">SAT Math Bootcamp</h3>
+                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-display tracking-tight">SAT Math Bootcamp</h3>
             </div>
           </button>
           
@@ -807,7 +807,7 @@
                 <div class="program-acc-icon w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-500 shrink-0 text-muted-foreground bg-muted">
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4 4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
                 </div>
-                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-heading tracking-tight">Mastery Engines</h3>
+                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-display tracking-tight">Mastery Engines</h3>
             </div>
           </button>
           
@@ -883,7 +883,7 @@
                 <div class="program-acc-icon w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-500 shrink-0 text-muted-foreground bg-muted">
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 </div>
-                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-heading tracking-tight">1-on-1 AP Mentorship</h3>
+                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-display tracking-tight">1-on-1 AP Mentorship</h3>
             </div>
           </button>
           
@@ -951,7 +951,7 @@
                 <div class="program-acc-icon w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-500 shrink-0 text-muted-foreground bg-muted">
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                 </div>
-                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-heading tracking-tight">University Tutoring</h3>
+                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-display tracking-tight">University Tutoring</h3>
             </div>
           </button>
           
@@ -1001,7 +1001,7 @@
                 <div class="program-acc-icon w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-500 shrink-0 text-muted-foreground bg-muted">
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
                 </div>
-                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-heading tracking-tight">Olympiad & Contests</h3>
+                <h3 class="program-acc-title font-black text-lg transition-colors duration-300 text-muted-foreground font-display tracking-tight">Olympiad & Contests</h3>
             </div>
           </button>
           
@@ -1087,7 +1087,7 @@
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                 </div>
                 <div>
-                  <h3 class="program-list-title font-bold text-lg transition-colors text-foreground font-heading tracking-tight">AP STEM Bootcamps</h3>
+                  <h3 class="program-list-title font-bold text-lg transition-colors text-foreground font-display tracking-tight">AP STEM Bootcamps</h3>
                   <p class="program-list-desc text-sm text-muted-foreground mt-2 leading-relaxed overflow-hidden transition-all duration-300" style="max-height: 100px; opacity: 1;">
                     Intensive classes to master the most difficult AP subjects.
                   </p>
@@ -1103,7 +1103,7 @@
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
                 </div>
                 <div>
-                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-heading tracking-tight">SAT Math Bootcamp</h3>
+                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-display tracking-tight">SAT Math Bootcamp</h3>
                   <p class="program-list-desc text-sm text-muted-foreground mt-2 leading-relaxed overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0;">
                     Targeted practice and strategies designed for a perfect 800.
                   </p>
@@ -1119,7 +1119,7 @@
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4 4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
                 </div>
                 <div>
-                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-heading tracking-tight">Mastery Engines</h3>
+                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-display tracking-tight">Mastery Engines</h3>
                   <p class="program-list-desc text-sm text-muted-foreground mt-2 leading-relaxed overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0;">
                     Self-guided, interactive practice courses. (AP Biology - Available Now!)
                   </p>
@@ -1135,7 +1135,7 @@
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 </div>
                 <div>
-                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-heading tracking-tight">1-on-1 AP Mentorship</h3>
+                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-display tracking-tight">1-on-1 AP Mentorship</h3>
                   <p class="program-list-desc text-sm text-muted-foreground mt-2 leading-relaxed overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0;">
                     Private, individualized tutoring for maximum improvement.
                   </p>
@@ -1151,7 +1151,7 @@
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                 </div>
                 <div>
-                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-heading tracking-tight">University Tutoring</h3>
+                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-display tracking-tight">University Tutoring</h3>
                   <p class="program-list-desc text-sm text-muted-foreground mt-2 leading-relaxed overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0;">
                     Advanced support for difficult college-level courses.
                   </p>
@@ -1167,7 +1167,7 @@
                   <svg class="lucide w-5 h-5" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
                 </div>
                 <div>
-                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-heading tracking-tight">Olympiad & Contests</h3>
+                  <h3 class="program-list-title font-bold text-lg transition-colors text-muted-foreground font-display tracking-tight">Olympiad & Contests</h3>
                   <p class="program-list-desc text-sm text-muted-foreground mt-2 leading-relaxed overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0;">
                     Preparation for highly competitive exams like AMC and Physics Olympiad.
                   </p>
@@ -1218,7 +1218,7 @@
              </div>
            </div>
            <div class="flex-1 flex flex-col gap-2">
-             <div class="text-[10px] font-bold text-muted-foreground mt-1 mb-1 uppercase tracking-widest text-center font-heading">Today</div>
+             <div class="text-[10px] font-bold text-muted-foreground mt-1 mb-1 uppercase tracking-widest text-center font-display">Today</div>
              
              <!-- Session 1 -->
              <div class="flex items-center justify-between p-3 rounded-xl bg-white dark:bg-zinc-800 border border-black/10 dark:border-white/10 shadow-sm relative group overflow-hidden">
@@ -1254,7 +1254,7 @@
                   </div>
                </div>
                
-               <h3 id="stage-title" class="text-3xl font-black text-foreground mb-4 font-heading tracking-tight">AP STEM Bootcamps</h3>
+               <h3 id="stage-title" class="text-3xl font-black text-foreground mb-4 font-display tracking-tight">AP STEM Bootcamps</h3>
                <p id="stage-desc" class="text-muted-foreground text-lg mb-8 max-w-sm mx-auto leading-relaxed">Intensive classes to master the most difficult AP subjects.</p>
                
                <button id="stage-cta" class="bg-foreground text-background px-8 py-3.5 rounded-full font-bold hover:scale-105 transition-transform flex items-center gap-2 mx-auto shadow-xl">
@@ -1397,7 +1397,7 @@
         <section class="bg-muted/30 border-t border-border/50 py-16 md:py-32">
           <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-12 md:mb-20">
-              <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-heading tracking-tighter">Meet The Mentors</h2>
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-display tracking-tighter">Meet The Mentors</h2>
               <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">Learn directly from Olympiad medalists, medical doctors, and top-percentile experts.</p>
             </div>
 
@@ -1415,8 +1415,8 @@
                              <img src="mentors/Dr.piri.jpg" alt="Portrait of Dr. Hossein Piri" loading="lazy" decoding="async" class="relative w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-background shadow-md group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 object-[center_10%]">
                            </div>
                            <div>
-                             <h3 class="text-lg md:text-xl font-black font-heading tracking-tight">Dr. Hossein Piri</h3>
-                             <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-indigo-500 mt-1 font-heading">Healthcare Operations & AI Expert</p>
+                             <h3 class="text-lg md:text-xl font-black font-display tracking-tight">Dr. Hossein Piri</h3>
+                             <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-indigo-500 mt-1 font-display">Healthcare Operations & AI Expert</p>
                            </div>
                          </div>
                          <p class="text-muted-foreground text-sm leading-relaxed flex-grow">Dr. Piri works at the intersection of healthcare operations research, machine learning, and behavioral operations. He focuses on practical systems that improve care delivery, including patient-centered warning systems and AI-driven approaches for addressing healthcare disparities.</p>
@@ -1456,8 +1456,8 @@
                              <img src="mentors/elena zhou.jpg" alt="Portrait of Elena Z." loading="lazy" decoding="async" class="relative w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-background shadow-md group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 object-[center_10%]">
                            </div>
                            <div>
-                             <h3 class="text-lg md:text-xl font-black font-heading tracking-tight">Elena Z.</h3>
-                             <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-indigo-500 mt-1 font-heading">Honors Biology, UWaterloo</p>
+                             <h3 class="text-lg md:text-xl font-black font-display tracking-tight">Elena Z.</h3>
+                             <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-indigo-500 mt-1 font-display">Honors Biology, UWaterloo</p>
                            </div>
                          </div>
                          <p class="text-muted-foreground text-sm leading-relaxed flex-grow">Elena is an Honors Biology powerhouse who has successfully cracked the code to top-percentile academic performance with a 4.0 GPA. As a Research Assistant at Sunnybrook Hospital, she loves breaking down complex sciences into highly digestible, university-level concepts.</p>
@@ -1494,8 +1494,8 @@
                              <img src="mentors/sadr.jpeg" alt="Portrait of Dr. Sherri Sadr" loading="lazy" decoding="async" class="relative w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-background shadow-md group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 object-[center_10%]">
                            </div>
                            <div>
-                             <h3 class="text-lg md:text-xl font-black font-heading tracking-tight">Dr. Sherri Sadr</h3>
-                             <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-indigo-500 mt-1 font-heading">Dental Graduate, UBC</p>
+                             <h3 class="text-lg md:text-xl font-black font-display tracking-tight">Dr. Sherri Sadr</h3>
+                             <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-indigo-500 mt-1 font-display">Dental Graduate, UBC</p>
                            </div>
                          </div>
                          <p class="text-muted-foreground text-sm leading-relaxed flex-grow">Sherri is a dental graduate from UBC with a strong science and research foundation. Her combination of academic rigor, undergraduate mentorship through UBC's REX program, and real-world health service helps her coach students with clarity, structure, and high standards.</p>
@@ -2045,7 +2045,7 @@
         <section class="pt-16 pb-16 md:py-32 max-w-7xl mx-auto px-6">
           <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-6">
             <div>
-              <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-heading tracking-tighter">The Track Record</h2>
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 font-display tracking-tighter">The Track Record</h2>
               <p class="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">We let the results do the talking. Undeniable data, followed by the students who lived it.</p>
             </div>
             <a href="#" class="w-full md:w-auto justify-center bg-foreground text-background hover:bg-foreground/90 px-8 py-3 rounded-full font-bold transition-colors whitespace-nowrap flex items-center gap-2 shadow-sm text-sm md:text-base">
@@ -2067,11 +2067,11 @@
                    
                    <!-- Text Info Moved Under Video -->
                    <div class="px-2 md:px-6">
-                      <div class="inline-block px-3 py-1 bg-indigo-500/20 text-indigo-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4 font-heading">
+                      <div class="inline-block px-3 py-1 bg-indigo-500/20 text-indigo-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4 font-display">
                          Featured Story
                       </div>
-                      <h3 id="main-video-student" class="text-2xl md:text-3xl font-black text-white mb-2 font-heading tracking-tight">Shivam Maji</h3>
-                      <p id="main-video-school" class="text-indigo-400 font-bold uppercase tracking-widest text-xs md:text-sm mb-6 font-heading">Admitted to NYU</p>
+                      <h3 id="main-video-student" class="text-2xl md:text-3xl font-black text-white mb-2 font-display tracking-tight">Shivam Maji</h3>
+                      <p id="main-video-school" class="text-indigo-400 font-bold uppercase tracking-widest text-xs md:text-sm mb-6 font-display">Admitted to NYU</p>
                       <div class="relative">
                          <span class="absolute -top-4 -left-3 text-5xl text-white/10 font-serif leading-none">"</span>
                          <p id="main-video-quote" class="text-slate-300 italic leading-relaxed text-lg md:text-xl relative z-10 pl-4 border-l-2 border-indigo-500/50">
@@ -2084,7 +2084,7 @@
                  <!-- Mobile Only: Advanced Arrow Navigation -->
                  <div class="lg:hidden flex items-center justify-between w-full mt-8 bg-white/5 backdrop-blur-xl rounded-[2rem] p-4 border border-white/10 shadow-xl">
                     <div class="flex flex-col">
-                       <span class="text-[10px] font-bold uppercase tracking-widest text-indigo-400 mb-1 font-heading">
+                       <span class="text-[10px] font-bold uppercase tracking-widest text-indigo-400 mb-1 font-display">
                           Watch More Stories
                        </span>
                        <span class="text-sm text-slate-300 font-medium">
@@ -2105,7 +2105,7 @@
                  <!-- Thumbnail Selector (Desktop Only) -->
                  <div class="hidden lg:block lg:col-span-1 lg:relative lg:h-auto">
                     <div class="lg:absolute lg:inset-0 lg:h-full bg-slate-900/40 rounded-[2rem] p-6 border border-white/5 flex flex-col">
-                      <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-6 shrink-0 flex items-center gap-2 font-heading">
+                      <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-6 shrink-0 flex items-center gap-2 font-display">
                          <svg class="lucide w-3 h-3 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg> Watch More Stories
                       </h4>
                       <div class="flex-1 overflow-y-auto pr-2 pb-2 min-h-0 custom-scrollbar">
@@ -2121,7 +2121,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-white">Shivam Maji</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">Admitted to NYU</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">Admitted to NYU</div>
                               </div>
                             </button>
   
@@ -2135,7 +2135,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-slate-300">Edrik</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">Scored a 5 on AP Exam</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">Scored a 5 on AP Exam</div>
                               </div>
                             </button>
   
@@ -2149,7 +2149,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-slate-300">Sawar and Sanj</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">Scored a 5 on AP Bio</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">Scored a 5 on AP Bio</div>
                               </div>
                             </button>
   
@@ -2163,7 +2163,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-slate-300">Esther</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">Scored a 5 on AP Exam</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">Scored a 5 on AP Exam</div>
                               </div>
                             </button>
   
@@ -2177,7 +2177,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-slate-300">Seema</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">Parent of Sameepa</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">Parent of Sameepa</div>
                               </div>
                             </button>
   
@@ -2191,7 +2191,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-slate-300">Aryan</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">Scored a 5 on AP Physics</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">Scored a 5 on AP Physics</div>
                               </div>
                             </button>
   
@@ -2205,7 +2205,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-slate-300">Rizwan</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">Parent of Nabeel</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">Parent of Nabeel</div>
                               </div>
                             </button>
   
@@ -2219,7 +2219,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-slate-300">Bobby</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">AP Student</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">AP Student</div>
                               </div>
                             </button>
   
@@ -2233,7 +2233,7 @@
                               </div>
                               <div>
                                  <div class="video-thumbnail-student text-sm font-bold mb-0.5 text-slate-300">Nisha & Maya</div>
-                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-heading">Parent & AP Biology Student</div>
+                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 line-clamp-1 font-display">Parent & AP Biology Student</div>
                               </div>
                             </button>
   
@@ -2285,7 +2285,7 @@
      
      <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
        <div class="flex flex-col items-center animate-fade-in-up" style="animation-delay: 200ms; animation-fill-mode: both;">
-         <h2 class="text-4xl sm:text-5xl md:text-7xl font-black mb-6 md:mb-8 text-white leading-tight font-heading tracking-tighter">
+         <h2 class="text-4xl sm:text-5xl md:text-7xl font-black mb-6 md:mb-8 text-white leading-tight font-display tracking-tighter">
             Ready to secure <br class="hidden md:block"/> 
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-white to-purple-400 drop-shadow-sm">your edge?</span>
          </h2>
@@ -2304,7 +2304,7 @@
          </button>
          
          <!-- Trust signals -->
-         <div class="mt-8 md:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8 text-xs md:text-sm font-bold text-slate-400 uppercase tracking-widest font-heading">
+         <div class="mt-8 md:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8 text-xs md:text-sm font-bold text-slate-400 uppercase tracking-widest font-display">
             <span class="flex items-center gap-2">
                <svg class="lucide w-4 h-4 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> 
                98% Success Rate
@@ -2356,7 +2356,7 @@
 
            <!-- Services -->
            <div>
-              <h4 class="font-bold text-white mb-4 md:mb-6 uppercase tracking-widest text-[10px] md:text-xs font-heading">Programs</h4>
+              <h4 class="font-bold text-white mb-4 md:mb-6 uppercase tracking-widest text-[10px] md:text-xs font-display">Programs</h4>
               <ul class="space-y-3 md:space-y-4">
                  <li><a href="#" class="text-slate-400 hover:text-white transition-colors font-medium text-sm md:text-base">Mastery Engine</a></li>
                  <li><a href="#" class="text-slate-400 hover:text-white transition-colors font-medium text-sm md:text-base">Intensive Bootcamps</a></li>
@@ -2366,7 +2366,7 @@
 
            <!-- Company -->
            <div>
-              <h4 class="font-bold text-white mb-4 md:mb-6 uppercase tracking-widest text-[10px] md:text-xs font-heading">Company</h4>
+              <h4 class="font-bold text-white mb-4 md:mb-6 uppercase tracking-widest text-[10px] md:text-xs font-display">Company</h4>
               <ul class="space-y-3 md:space-y-4">
                  <li><a href="#" class="text-slate-400 hover:text-white transition-colors font-medium text-sm md:text-base">About Us</a></li>
                  <li><a href="#" class="text-slate-400 hover:text-white transition-colors font-medium text-sm md:text-base">Our Mentors</a></li>
@@ -2377,7 +2377,7 @@
 
            <!-- Legal -->
            <div class="col-span-1 sm:col-span-2 lg:col-span-1">
-              <h4 class="font-bold text-white mb-4 md:mb-6 uppercase tracking-widest text-[10px] md:text-xs font-heading">Legal</h4>
+              <h4 class="font-bold text-white mb-4 md:mb-6 uppercase tracking-widest text-[10px] md:text-xs font-display">Legal</h4>
               <ul class="space-y-3 md:space-y-4 flex flex-col sm:flex-row lg:flex-col gap-0 sm:gap-6 lg:gap-0">
                  <li><a href="#" class="text-slate-400 hover:text-white transition-colors font-medium text-sm md:text-base">Privacy Policy</a></li>
                  <li><a href="#" class="text-slate-400 hover:text-white transition-colors font-medium text-sm md:text-base">Terms of Service</a></li>
@@ -2416,16 +2416,16 @@
                  <img id="mentor-modal-avatar" src="" alt="" class="w-full h-full object-cover object-[center_10%]" />
                  <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               </div>
-              <h2 class="text-2xl font-black text-white text-center mb-1 font-heading tracking-tighter"></h2>
-              <p id="mentor-modal-role" class="text-xs font-bold text-indigo-500 uppercase tracking-widest text-center mb-6 font-heading"></p>
+              <h2 class="text-2xl font-black text-white text-center mb-1 font-display tracking-tighter"></h2>
+              <p id="mentor-modal-role" class="text-xs font-bold text-indigo-500 uppercase tracking-widest text-center mb-6 font-display"></p>
            </div>
            
            <!-- Right Content -->
            <div class="md:w-3/5 p-8 flex flex-col">
-              <h3 class="text-sm font-bold uppercase text-slate-400 mb-4 font-heading tracking-tight">About the Mentor</h3>
+              <h3 class="text-sm font-bold uppercase text-slate-400 mb-4 font-display tracking-tight">About the Mentor</h3>
               <p id="mentor-modal-bio" class="text-sm leading-relaxed text-slate-300 mb-8"></p>
               
-              <h3 class="text-sm font-bold uppercase text-slate-400 mb-4 font-heading tracking-tight">Elite Credentials</h3>
+              <h3 class="text-sm font-bold uppercase text-slate-400 mb-4 font-display tracking-tight">Elite Credentials</h3>
               <div id="mentor-modal-accolades" class="flex flex-col gap-3 mb-8">
                  <!-- Accolades injected here via JS -->
               </div>
