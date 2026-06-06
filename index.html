@@ -7,6 +7,35 @@
   
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Theme Initialization Script -->
+  <script>
+    function getInitialTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        return savedTheme;
+      }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.contains('dark');
+      setTheme(isDark ? 'light' : 'dark');
+    }
+
+    // Immediately set the theme to avoid flash of incorrect mode
+    setTheme(getInitialTheme());
+  </script>
+
   <script>
     // Mentor Modal Logic
     const MENTORS_DATA = [
@@ -198,7 +227,7 @@
         </span>
       </div>
       <div class="flex items-center gap-6">
-        <button class="p-2 rounded-full hover:bg-muted transition-colors" aria-label="Toggle theme" onclick="document.documentElement.classList.toggle('dark')">
+        <button class="p-2 rounded-full hover:bg-muted transition-colors" aria-label="Toggle theme" onclick="toggleTheme()">
           <svg class="lucide w-5 h-5 dark:hidden" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
           <svg class="lucide w-5 h-5 hidden dark:block" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
         </button>
@@ -244,7 +273,7 @@
       </div>
       
       <div class="flex items-center gap-2 shrink-0">
-        <button class="p-1.5 rounded-full hover:bg-muted transition-colors text-muted-foreground" aria-label="Toggle theme" onclick="document.documentElement.classList.toggle('dark')">
+        <button class="p-1.5 rounded-full hover:bg-muted transition-colors text-muted-foreground" aria-label="Toggle theme" onclick="toggleTheme()">
           <svg class="lucide w-4 h-4 dark:hidden" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
           <svg class="lucide w-4 h-4 hidden dark:block" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
         </button>
