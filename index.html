@@ -185,7 +185,7 @@
   </style>
 </head>
 
-<body class="antialiased min-h-screen font-sans text-foreground">
+<body class="antialiased min-h-screen font-sans text-foreground overflow-x-hidden">
   
   <!-- ----------------- Header ----------------- -->
   <header class="dark fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background/80 text-foreground backdrop-blur-xl">
@@ -235,21 +235,21 @@
     </div>
 
     <!-- Mobile Header -->
-    <div class="flex md:hidden px-4 h-16 items-center justify-between w-full">
-      <div class="flex items-center gap-2">
-        <img src="logo/logo.svg" alt="Master Your Courses Logo" class="w-8 h-8 object-contain dark:brightness-0 dark:invert" onerror="this.style.display='none'" />
-        <span class="text-base font-black tracking-tight text-foreground whitespace-nowrap">
+    <div class="flex md:hidden px-4 h-16 items-center justify-between w-full gap-2">
+      <div class="flex items-center gap-1 min-w-0 shrink">
+        <img src="logo/logo.svg" alt="Master Your Courses Logo" class="w-6 h-6 object-contain dark:brightness-0 dark:invert shrink-0" onerror="this.style.display='none'" />
+        <span class="text-sm sm:text-base font-black tracking-tight text-foreground truncate">
           Master<span class="text-indigo-500">Your</span>Courses
         </span>
       </div>
       
-      <div class="flex items-center gap-3 w-full md:w-auto border-b md:border-b-0 border-white/10 pb-3 md:pb-0">
+      <div class="flex items-center gap-2 shrink-0">
         <button class="p-1.5 rounded-full hover:bg-muted transition-colors text-muted-foreground" aria-label="Toggle theme" onclick="document.documentElement.classList.toggle('dark')">
           <svg class="lucide w-4 h-4 dark:hidden" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
           <svg class="lucide w-4 h-4 hidden dark:block" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
         </button>
         
-        <button class="px-4 py-2 rounded-full bg-foreground text-background text-xs font-bold active:scale-95 transition-all shadow-md">
+        <button class="px-4 py-2 rounded-full bg-foreground text-background text-[10px] sm:text-xs font-bold active:scale-95 transition-all shadow-md whitespace-nowrap">
           Apply Now
         </button>
       </div>
@@ -258,7 +258,7 @@
 
   <main>
     <!-- ----------------- Cinematic Hero Section ----------------- -->
-    <section id="hero-section" class="dark relative w-full pt-12 md:pt-24 pb-16 md:pb-32 group bg-background text-foreground">
+    <section id="hero-section" class="dark relative w-full pt-28 md:pt-32 pb-16 md:pb-32 group bg-background text-foreground">
       
       <!-- Isolated Background Layer for Performance -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
